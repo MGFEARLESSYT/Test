@@ -1,0 +1,42 @@
+{
+  "prefix": "!",
+  "token": "MTQwNzY5Njc4NDY0OTg3OTU3Mg.Gf2Q-9.g2iDpCvK255eu1s1dhy2L0o-8cRsTwKHOyE2vk",
+
+  "moderation": {
+    "banCommand": true,
+    "kickCommand": true,
+    "warnCommand": true,
+    "muteCommand": true,
+    "unmuteCommand": true,
+    "roleAddCommand": true,
+    "roleRemoveCommand": true,
+    "clearMessagesCommand": true
+  },
+
+  "logging": {
+    "enabled": true,
+    "logChannel": "mod-logs",
+    "logActions": [
+      "ban",
+      "kick",
+      "warn",
+      "mute",
+      "unmute",
+      "roleAdd",
+      "roleRemove",
+      "messageDelete",
+      "messageEdit"
+    ]
+  },
+
+  "roles": {
+    "adminRole": "Admin",
+    "modRole": "Moderator",
+    "muteRole": "Muted"
+  },
+
+  "permissions": {
+    "adminOnly": ["ban", "kick"],
+    "modAllowed": ["warn", "mute", "unmute", "roleAdd", "roleRemove", "clearMessages"]
+  }
+}
